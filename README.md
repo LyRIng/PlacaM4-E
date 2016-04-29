@@ -5,3 +5,9 @@ La M4/E de L&R Ingeniería es una placa periférica orientada a su utilización 
 
 #![Figura 1: Diagrama de M4/E, placa auxiliar modular con conexión I2C a la CL2bm1](https://raw.githubusercontent.com/LyRIng/PlacaM4-E/master/M4-Expansion_Board.jpg)
 *Figura 1: Diagrama de M4/E, placa auxiliar modular con conexión I2C a la CL2bm1*
+
+Como parte del presente proyecto se puede acceder en distintos directorios al esquemático eléctrico de la placa, y a información descriptiva de la placa principal. Además, se explica un programa típico residente en el controlador, y se da acceso al código fuente de dicho programa.
+
+###Programación
+La M4/E puede funcionar como periférico autónomo, o conectarse con una placa CPU principal. Requiere una fuente de alimentación de corriente continua típicamente de 9 a 16V, que es internamente regulada a 5V. En cualquier caso, debe programarse el controlador PSoC para realizar alguna función útil, y esto se logra utilizando el software gratuito PSoC Designer [2] (corre bajo Windows) que incluye un compilador de lenguaje C, y alguna interfase de programación que convierta desde USB a las señales ISP (In System Programming) del controlador, que cuenta con 32 KB de memoria Flash interna para almacenamiento de programas del usuario. Dichas interfases son económicas (por ejemplo el Cypress MiniProg1, alrededor de usd 30). Desde el punto de vista del programador, la placa M4/E aparece como se indica en la Figura 2.
+
