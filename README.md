@@ -17,3 +17,12 @@ La M4/E puede funcionar como periférico autónomo, o conectarse con una placa C
 En este proyecto se proporciona un archivo ZIP que es posible importar en el PSoC Designer, que configura el controlador PSoC para una aplicación típica, consistente de un lazo de monitoreo de entradas y actualización en registros de su estado, y recepción de cambios ordenados por el control principal en las salidas. Dichos registros se agrupan en forma de tabla y son accesibles vía el bus I2C, a través de una API (Application Program Interface). Asimismo, el estado interno se envía continuamente a través del puerto serie configurado en el controlador PSoC.
 
 En la Figura 3 se muestra una placa M4/E en operación. Varias de estas placas [3] se encuentran en operación continua desde 2010 en diversos proyectos, en la mayoría de las aplicaciones relacionadas con energías renovables (solar, eólica de baja potencia).
+
+#![Figura 3](https://raw.githubusercontent.com/LyRIng/PlacaM4-E/master/Foto_M4E.jpg)
+*Figura 3: Foto en detalle del M4/E, en conexión con la CL2bm1 a través de I2C.*
+
+Referencias
+[1 - http://www.cypress.com/products/psoc-1] (http://www.cypress.com/products/psoc-1)
+[2] http://www.cypress.com/documentation/software-and-drivers/psoc-designer-54-sp1?source=search&cat=software_tools
+[3] http://www.lyr-ing.com/Embedded/LyRAVR_CySp.htm
+
