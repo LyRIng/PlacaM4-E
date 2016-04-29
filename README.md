@@ -11,3 +11,9 @@ Como parte del presente proyecto se puede acceder en distintos directorios al es
 ###Programación
 La M4/E puede funcionar como periférico autónomo, o conectarse con una placa CPU principal. Requiere una fuente de alimentación de corriente continua típicamente de 9 a 16V, que es internamente regulada a 5V. En cualquier caso, debe programarse el controlador PSoC para realizar alguna función útil, y esto se logra utilizando el software gratuito PSoC Designer [2] (corre bajo Windows) que incluye un compilador de lenguaje C, y alguna interfase de programación que convierta desde USB a las señales ISP (In System Programming) del controlador, que cuenta con 32 KB de memoria Flash interna para almacenamiento de programas del usuario. Dichas interfases son económicas (por ejemplo el Cypress MiniProg1, alrededor de usd 30). Desde el punto de vista del programador, la placa M4/E aparece como se indica en la Figura 2.
 
+#![Figura 2](https://raw.githubusercontent.com/LyRIng/PlacaM4-E/master/Diagr_l%C3%B3gico.jpg)
+*Figura 2: Diagrama lógico de E/S de la placa M4/E*
+
+En este proyecto se proporciona un archivo ZIP que es posible importar en el PSoC Designer, que configura el controlador PSoC para una aplicación típica, consistente de un lazo de monitoreo de entradas y actualización en registros de su estado, y recepción de cambios ordenados por el control principal en las salidas. Dichos registros se agrupan en forma de tabla y son accesibles vía el bus I2C, a través de una API (Application Program Interface). Asimismo, el estado interno se envía continuamente a través del puerto serie configurado en el controlador PSoC.
+
+En la Figura 3 se muestra una placa M4/E en operación. Varias de estas placas [3] se encuentran en operación continua desde 2010 en diversos proyectos, en la mayoría de las aplicaciones relacionadas con energías renovables (solar, eólica de baja potencia).
