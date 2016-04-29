@@ -23,6 +23,8 @@ En la Figura 3 se muestra una placa M4/E en operación. Varias de estas placas [
 
 ###Referencias
 [1 - http://www.cypress.com/products/psoc-1] (http://www.cypress.com/products/psoc-1)
+
 [2 - http://www.cypress.com/documentation/software-and-drivers/psoc-designer-54-sp1?source=search&cat=software_tools] (http://www.cypress.com/documentation/software-and-drivers/psoc-designer-54-sp1?source=search&cat=software_tools)
+
 [3 - http://www.lyr-ing.com/Embedded/LyRAVR_CySp.htm] (http://www.lyr-ing.com/Embedded/LyRAVR_CySp.htm)
 
